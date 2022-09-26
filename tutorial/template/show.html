@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenizer</title>
+</head>
+<body bgcolor="black">
+    <form action="#" method="post">
+        {% csrf_token %}
+        <center><div class="container">
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <label for ='username'><font color="cyan"><b>Enter Text</font></b></label>
+            <input type="text" placeholder="enter text" name="username" float="right" required><br>  
+        </div></center>
+    </form>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       <center>
+        <h1>
+        <font color="yellow">
+          <!-- <marquee direction="right" width="30%" behaviour="slide">--> 
+           {{token}}
+           </font>
+        </h1>
+        </center>
+    </div>
+
+</body>
+</html>
